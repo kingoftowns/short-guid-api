@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+
+  api:
+    image: flask-app
+    container_name: flask-api
+    ports:
+      - "80:80"
+    env_file:
+      - .env
